@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Zodiac Animals</title>
+    <link href="css/zodiac-animals.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Chinese Zodiac Animals</h1>
+        <h2>Sorting an Array of Objects by Key</h2>
+        <img class="wheel" src="images/wheel-slices/zodiac-animals-wheel.png">
+
+        <!-- add slider for wheel spin speed -->
+        <div class="slider">
+            <p>Wheel Speed:</p>
+            <input type="range" min="1" max="500" 
+            value="50" id="slider">
+        </div>
+
+        <div>
+            <select>
+                <option value="choose">Sort by...</option>
+                <option value="eng" selected>English Name</option>
+                <option value="chi">Chinese Name</option>
+                <option value="yr">Year</option>
+            </select>
+
+            <input type="checkbox" id="cb" value="desc">
+            <label for="cb">Descending</label>
+            
+            <p> Click Animal to Show / Hide More Info</p>
+        </div>
+
+        <section>
+            <!-- 12 animals live in the ZOO -->
+        </section>
+
+    </div>
+
+    <script src="js/zodiac-animals-data.js"></script>
+    <script src="js\Chinese-Zodiac-Animals-Part-2.js"></script>
+    <!-- <script src="js/sort-animals-by-key-CODING-CHALLENGE.js">
+    </script> -->
+    
+    
+</body>
+</html>

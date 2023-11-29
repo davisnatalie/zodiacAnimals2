@@ -1,0 +1,260 @@
+:root {
+    --colr: #c91921;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: var(--colr);
+    background-color: var(--colr);
+    background-color: #000;
+}
+
+.container {
+    text-align: center;
+    width: 800px;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 10% 0 auto;
+    padding: 0.25rem 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+h1 + div {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid #888;
+    border-radius: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+select, input, label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--colr);
+    margin: 0 0.5rem;
+}
+
+select {
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.5rem;
+}
+
+label {
+    margin-right: 1.75rem;
+    margin-left: 0.25rem;
+}
+
+input {
+    margin-left: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--colr);
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-height: 80vh;
+    margin: 1rem auto;
+    justify-content: center;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    overflow-y: auto;
+    box-shadow: 0rem 1rem 1rem #33000080;
+}
+
+.divvy {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    background-color: #fff;
+    padding: 10px;
+    width: 135px;
+    height: 180px;
+    border-radius: 10px;
+    border: 3px solid var(--colr);
+    color: #441;
+    text-align: center;
+    box-shadow: 5px 5px 5px #33000070; /* last 2 digits are % opacity */
+
+}
+
+.animal-pic {
+    width: 73%;
+    height: auto;
+    margin: 20px 0px 0px 25px;
+}
+
+span, .chinese-char, .zodiac-year, .pinyin {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+}
+
+.chinese-char {
+    top: 145px;
+    right: 45px;
+    width: 43px;
+    height: 43px;
+}
+
+.zodiac-year { 
+    top: 2px;
+    left: 5px;
+    font-size: 0.85rem;
+    width: 42px;
+    height: 95%;
+    display: inline;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    color: var(--colr);
+}
+
+.english {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 4px;
+    right: 40%;
+    color: var(--colr);
+
+}
+
+.pinyin {
+    top: 120px;
+    right: 40%;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.wheel {
+    /* display: none; */
+    /* position: absolute; */
+    /* cursor: pointer; */
+    padding: 0;
+    left: 6rem;
+    top: 6rem;
+    width: 500px;
+    border-radius: 50%;
+    z-index: 1;
+    /* box-shadow: 1rem 1rem 1rem #33000060; */
+}
+
+.divvy p span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--colr);
+    padding: 2px 4px 2px 2px;
+    width: 40px;
+    color: #fff;
+    font-size: 1rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.sound-icon {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    z-index: 5;
+}
+
+.animal-info {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    background-color: #fff;
+    left: -10px;
+    top: -10px;
+    font-size: 0.85rem;
+    opacity: 0
+}
+
+.animal-name {
+    color: var(--colr);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.wheel-slice-holder {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    /* border: 6px dashed yellow; */
+    left: 6rem;
+    top: 6rem;
+    width: 475px;
+    height: 475px;
+    border-radius: 250px;
+    font-size: 0.85rem;
+    opacity: 1;
+}
+
+
+.wheel-slice-img {
+    position: absolute;
+    width: 150px;
+    top: 15px;
+    /* transform: rotate(0deg); */
+    border: 5px dashed yellow;
+    transform-origin: "right bottom";
+    /* filter: invert(); */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        text-align: center;
+        width: 800px;
+        height: 2000px;
+        background-color: #fff;
+        margin: 0 10% 0 auto;
+        padding: 0.25rem 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--colr);
+        text-align: center;
+        color: white;
+        padding: 5px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        max-height: 100vh;
+        margin: 1rem auto;
+        justify-content: center;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        overflow-y: auto;
+        box-shadow: 0rem 1rem 1rem #33000080;
+    }
+}
